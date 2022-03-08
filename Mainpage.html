@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Formulaire Exo 4</title>
+
+</head>
+
+<body>
+<form method="post" action="https://simplonline.co/briefs/d002cc8b-55aa-4321-b7db-80b9f2617fa5">
+    <fieldset>
+        <legend>Vos information</legend>
+
+            <p>
+                <label for="nom">Votre nom ?</label>
+                <input type="text" name="nom" id="nom" placeholder="Aipas" pattern="[A-Za-z' -]+" required /></p>
+
+            <p>
+                <label for="prenom">Votre prénom ?</label>
+                <input type="text" name="prenom" id="prenom" placeholder="Jean" pattern="[A-Za-z' -]+"  required /></p>
+
+            <p>
+                <label for="age">Votre âge ?</label>
+                <input type="number" name="age" id="age" placeholder="107" required /></p>
+
+            <p>
+                <label for="birthdate">Votre date de naissance</label>
+                <input type="date" name="birthdate" id="birthdate" required /></p>
+
+            <p>
+                <label for="Homme">Votre sexe :</label></p>
+            <p>
+                <label for="Homme">Homme</label> : <input type="radio" name="sexe" id="Homme" />
+                <label for="Femme">Femme</label> : <input type="radio" name="sexe" id="Femme" />
+                <label for="autre">Autre</label> : <input type="radio" name="sexe" id="autre" /></p>
+
+            <p>
+                <label for="pays">Votre pays de naissance ?</label>
+                <select name="pays" id="pays">
+
+                    <optgroup label="Europe">
+                        <option value="france">France</option>
+                        <option value="espagne">Espagne</option>
+                        <option value="Italie">Italie</option>
+                        <option value="Belgique">Belgique</option>
+                    </optgroup>
+
+                    <optgroup label="Autre">
+                        <option value="Canada">Canada</option>
+                        <option value="Australie">Australie</option>
+                        <option value="Coree du sud">Corée du sud</option>
+                        <option value="Cuba">Cuba</option>
+                    </optgroup>
+
+                </select></p>
+
+            <p>
+                <label for="nationalitee">Votre nationalitée ?</label>
+                <select name="nationalitee" id="nationalitee">
+
+                    <optgroup label="Europe">
+                        <option value="Français">Français.e</option>
+                        <option value="Espagnole">Espagnole</option>
+                        <option value="Italien">Italien.ne</option>
+                        <option value="Belge">Belge</option>
+                    </optgroup>
+
+                    <optgroup label="Autre">
+                        <option value="Canadien">Canadien.ne</option>
+                        <option value="Australien">Australien.ne</option>
+                        <option value="Coreen">Coréen.ne</option>
+                        <option value="Cubain">Cubain.ne</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="metier">Votre métier ?</label>
+                <input type="text" name="metier" id="metier" placeholder="Carboniste" /></p>
+            <p>
+                <label for="sansemploi">Sans emploi ?</label> : <input type="checkbox" name="sansemploi" id="sansemploi" /></p>
+                
+    </fieldset>
+
+    <fieldset>
+        <legend>Vos coordonées</legend>
+        
+            <p>
+                <label for="adresse">Votre adresse actuelle ?</label>
+                <input type="text" name="adresse" id="adresse" placeholder="1 rue Jean Aipas" required /></p>
+            
+            <p>
+                <label for="ville">Votre ville ?</label>
+                <input type="text" name="ville" id="ville" placeholder="Montcuq"  pattern="[A-Za-z' -]+" required /></p>
+
+            <p>
+                <label for="codepostal">Votre code postal ?</label>
+                <input type="text" name="codepostal" id="codepostal" placeholder="46800" pattern="[0-9]{0,5}" /></p>
+
+            <p>
+                <label for="email">Votre Email ?</label>
+                <input type="email" name="email" id="email" placeholder="Jean@Aipas.com" required /></p>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>information complémentaire</legend>
+
+            <p>
+                <label for="numsecusociale">Votre numéro de sécurité sociale ?</label>
+                <input type="number" name="numsecusocial" id="numsecusociale" placeholder="9 85 83 63 964 999 82" required /></p>
+
+            <p>
+                <label for="numpasseport">Votre numéro de passeport ?</label>
+                <input type="text" name="numpasseport" id="numpasseport" placeholder="14CE49906" pattern="[0-9]{0,15}required" /></p>
+
+            <p>
+                <label for="delivrancepasseport">Date de délivrance de votre passeport ?</label>
+                <input type="date" name="delivrancepasseport" id="delivrancepasseport" required /></p>
+
+            <p>
+                <label for="validitepasseport">La validité de votre passeport ?</label>
+                <input type="date" name="validitepasseport" id="validitepasseport" required /></p>
+
+    </fieldset>
+
+    <p>
+        <input type="submit" value="Envoyer le formulaire"></p>
+    <p>
+        <input type="reset" value="Reset du formulaire"></p>
+
+    </form>
+</body>
+</html>
