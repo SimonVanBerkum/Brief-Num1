@@ -27,7 +27,7 @@
 
             <p>
                 <label for="age">Votre âge ?</label>
-                <input type="number" name="age" id="age" placeholder="107" required /></p>
+                <input type="number" name="age" id="age" placeholder="107" pattern="[0-9]" min="0" required /></p>
 
             <p>
                 <label for="birthdate">Votre date de naissance</label>
@@ -81,8 +81,24 @@
             </p>
 
             <p>
-                <label for="metier">Votre métier ?</label>
-                <input type="text" name="metier" id="metier" placeholder="Carboniste" /></p>
+                <label for="metier">Votre metier ?</label>
+                <select name="metier" id="metier">
+
+                    <optgroup label="un">
+                        <option value="deux">deux</option>
+                        <option value="trois">trois</option>
+                        <option value="quatre">quatre</option>
+                        <option value="cinq">cinq</option>
+                    </optgroup>
+
+                    <optgroup label="six">
+                        <option value="sept">six</option>
+                        <option value="huit">sept</option>
+                        <option value="neuf">huit</option>
+                        <option value="dix">neuf</option>
+                    </optgroup>
+
+                </select></p>
             <p>
                 <label for="sansemploi">Sans emploi ?</label> : <input type="checkbox" name="sansemploi" id="sansemploi" /></p>
                 
@@ -113,12 +129,12 @@
         <legend>information complémentaire</legend>
 
             <p>
-                <label for="numsecusociale">Votre numéro de sécurité sociale ?</label>
-                <input type="number" name="numsecusocial" id="numsecusociale" placeholder="9 85 83 63 964 999 82" required /></p>
+                 <label>Votre numéro sécurité sociale</label>
+                 <input type="text" name="secu" id="secu" placeholder="2 20 22 505 999" pattern="[0-9]{0,15}" required></p>
 
             <p>
-                <label for="numpasseport">Votre numéro de passeport ?</label>
-                <input type="text" name="numpasseport" id="numpasseport" placeholder="14CE49906" pattern="[0-9]{0,15}required" /></p>
+                <label>Numéro de passeport</label>
+                <input type="text" name="passeport" id="passeport"placeholder="54 BV 85476" pattern="[0-9A-Za-z]{9}" required></p>
 
             <p>
                 <label for="delivrancepasseport">Date de délivrance de votre passeport ?</label>
